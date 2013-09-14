@@ -1,0 +1,26 @@
+/* ---------- Browser normalization ---------- */
+body {
+  background: #FFF;
+  font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif;
+  font-size: 12px; }
+
+/* ---------- Links ---------- */
+a {
+  color: #5B677D;
+  text-decoration: underline; }
+
+a:hover {
+  color: #06C;
+  text-decoration: none; }
+
+/* ---------- Headers ---------- */
+h1 {
+  font-size: 1.8em;
+  color: #6A88CE; }
+
+/* ---------- Separator ---------- */
+hr, .separator {
+  border-color: #BFBFBF transparent #FFF;
+  border-style: solid;
+  border-width: 1px 0; }
+

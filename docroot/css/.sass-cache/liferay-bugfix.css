@@ -1,0 +1,9 @@
+/*  Poll portlet color bugfix (.alpha und .beta sind nirgends definiert). */
+.alpha, .results-row td.alpha {
+  background-color: #238A18;
+  border-width: 0; }
+
+.beta, .results-row td.beta {
+  background-color: rgba(214, 214, 214, 0.5);
+  border-width: 0; }
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+</head>
+
+<body class="$css_class">
+
+#* BGN-OLD 
+#if($is_signed_in)
+	#dockbar()
+#end
+END-OLD *#
+
+#* BGN-NEW *#
+#if($bShowDockbarPortlet)
+	#dockbar()
+#end
+#* END-NEW *#
+
+<div id="wrapper">
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<header id="banner" role="banner">
+		
+		<table class="pheader" border="0" cellspacing="0" cellpadding="0" width="100%">
+			
+			<tr>
+				
+				<td class="pheader-heading">
+				
+					<hgroup id="heading">
+						<h1 class="company-title">
+							<a class="$logo_css_class" href="$company_url" title="#language("go-to") $company_name">
+								<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+							</a>
+						#*
+							#if ($show_site_name)
+								<span class="site-name" title="#language("go-to") $site_name">
+									$site_name
+								</span>
+							#end
+						*#
+						</h1>
+						<h2 class="community-title">
+							<a href="$community_default_url" title="#language("go-to") $community_name">
+								<span>$community_name</span>
+							</a>
+						</h2>
+						<h3 class="page-title">
+							<span>$the_title</span>
+						</h3>
+					</hgroup>
+		
+				</td>
+				<td class="pheader-navarea">
+					<div class="pheader-navarea-content">
+           $theme.runtime('82_INSTANCE_MAIN', '', $velocityPortletPreferences.toString())
+						<nav class="general-options">
+							<ul>
+								<li class="login-left-top">
+						   			 $theme.runtime('58_INSTANCE_MAIN', '', $velocityPortletPreferences.toString())
+						    	</li>
+						    </ul>
+						    </span>
+							<ul class="anmeldung">
+							#*	REMOVE DEFAULT SIGN IN BUTTON
+								#if($bShowCtlPanelLink)
+									<li>
+										<a href="$sCtlPanelURL" rel="nofollow">$sCtlPanelLabel</a>
+									</li>
+								#end
+								#if($bShowSignInLink)
+									<li>
+										<a id="sign-in" href="$sSignInURL" rel="nofollow">$sSignInLabel</a>
+									</li>
+								#end
+							*#
+								#if($bShowSignOutLink)
+									<li>
+										<a href="$sCtlPanelURL" rel="nofollow">$user_name</a> (<a id="sign-out" href="$sSignOutURL" rel="nofollow">$sSignOutLabel</a>)
+									</li>
+								#end
+								<li class="stop"><div></div></li>
+							</ul> 
+						</nav>
+				
+						#if ($update_available_url)
+							<div class="popup-alert-notice">
+								<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
+							</div>
+						#end
+			
+						<nav class="site-breadcrumbs" id="breadcrumbs">
+							<h1>
+								<span>#language("breadcrumbs")</span>
+							</h1>	
+							#breadcrumbs()
+						</nav>
+				
+						#if ($has_navigation)
+							#parse ("$full_templates_path/navigation.vm")
+						#end
+					
+				</td>
+				
+			</tr>
+			
+		</table>
+		
+	</header>
+
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<cols>
+			<col width="90%">
+			<col width="10%">
+		</cols>
+		<tbody>
+			<tr><td class="content">
+				<div id="content">
+					#if ($selectable)
+						$theme.include($content_include)
+					#else
+						$portletDisplay.recycle()
+			
+						$portletDisplay.setTitle($the_title)
+			
+						$theme.wrapPortlet("portlet.vm", $content_include)
+					#end
+				</div>
+			</td>
+			<td class="sponsoring_and_advertisement">
+				<div class="sponsoring">
+					$sponsorContent
+				</div>
+				<div class="advertisement">
+					$advertisementContent
+				</div>
+			</td>
+			
+			</tr>
+		</tbody>
+	</table>
+
+	<footer id="footer" role="contentinfo">
+		$footerContent
+	</footer>
+</div>
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

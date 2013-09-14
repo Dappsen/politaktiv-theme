@@ -1,0 +1,23 @@
+.journal-content-article .main h1 {
+  float: left;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0; }
+
+.journal-content-article .main .sub_heading {
+  font-size: 22px;
+  float: right;
+  line-height: 36px;
+  vertical-align: bottom;
+  text-align: right; }
+
+.journal-content-article .main h2 {
+  font-size: 22px;
+  line-height: 36px; }
+
+.journal-content-article .main .red {
+  color: #FF0000; }
+
+.portlet-asset-publisher h1 {
+  font-size: 1.1em; }
+
