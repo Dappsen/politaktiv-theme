@@ -1,6 +1,10 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.1.1.9 - 19.11.2013
+--------------------
+* reenabled registration again
+
 6.0.1.8 - 10.5.2013
 --------------------
 * Community-Select-portlet Styles refactored
