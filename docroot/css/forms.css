@@ -48,47 +48,47 @@ fieldset {
 	padding: 8px;
 }
 
-.aui-fieldset {
+.fieldset {
 	border-width: 0;
 	padding: 0;
 	position: relative;
 }
 
-.aui-dialog-iframe-popup .aui-fieldset {
+.dialog-iframe-popup .fieldset {
 	margin-bottom: 0;
 }
 
-.aui-fieldset .aui-field-content, .aui-field-row, .aui-button-holder, .aui-field-wrapper-content {
+.fieldset .field-content, .field-row, .button-holder, .field-wrapper-content {
 	margin: 10px 0;
 }
 
-.aui-field-inline, .aui-field-row {
-	.aui-field-content {
+.field-inline, .field-row {
+	.field-content {
 		margin: 0;
 		margin-right: 5px;
 	}
 }
 
-.aui-search-bar {
-	.aui-field-content {
+.search-bar {
+	.field-content {
 		margin-right: 0;
 	}
 
-	.aui-field-content, .aui-button-content {
+	.field-content, .button-content {
 		display: inline-block;
 		vertical-align: middle;
 	}
 }
 
-.aui-field-choice .aui-field-label {
+.field-choice .field-label {
 	display: inline-block;
 }
 
-.aui-field-date .aui-field-content {
+.field-date .field-content {
 	overflow: hidden;
 }
 
-.aui-text-placeholder {
+.text-placeholder {
 	color: #777;
 }
 
@@ -97,14 +97,14 @@ legend {
 	padding: 0 6px;
 }
 
-.aui-fieldset-legend {
+.fieldset-legend {
 	color: #000;
 	font-size: 120%;
 	font-weight: bold;
 	padding: 0 0 1.5em;
 }
 
-.aui-legend {
+.legend {
 	border-bottom: 1px solid #CCC;
 	display: block;
 	position: absolute;
@@ -176,7 +176,7 @@ input, textarea {
 	color: #A9A9A9;
 }
 
-.aui-button-disabled {
+.button-disabled {
 	input[type], button {
 		&, &:hover, &:focus {
 			@include button-disabled;
@@ -184,11 +184,11 @@ input, textarea {
 	}
 }
 
-.aui-buttonitem-disabled {
+.buttonitem-disabled {
 	@include button-disabled;
 }
 
-input.aui-form-validator-error, textarea.aui-form-validator-error, select.aui-form-validator-error {
+input.form-validator-error, textarea.form-validator-error, select.form-validator-error {
 	border-color: #900;
 	border-style: dotted;
 }
@@ -200,14 +200,14 @@ input.aui-form-validator-error, textarea.aui-form-validator-error, select.aui-fo
 		padding-top: 0;
 	}
 
-	.aui-button-disabled input {
+	.button-disabled input {
 		-ms-filter: alpha(opacity=50);
 		filter: alpha(opacity=50);
 	}
 }
 
 .ie7 {
-	.aui-fieldset {
+	.fieldset {
 		zoom: 1;
 	}
 }
@@ -217,11 +217,11 @@ input.aui-form-validator-error, textarea.aui-form-validator-error, select.aui-fo
 		@include input-field-default;
 	}
 
-	input.submit, input.button, button, .aui-button-disabled input.submit, .aui-button-disabled input.button, .aui-button-disabled button {
+	input.submit, input.button, button, .button-disabled input.submit, .button-disabled input.button, .button-disabled button {
 		@include button-default;
 	}
 
-	.aui-button-disabled {
+	.button-disabled {
 		input.submit, input.button, button {
 			color: #555;
 		}

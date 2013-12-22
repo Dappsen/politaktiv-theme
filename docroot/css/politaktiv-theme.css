@@ -148,29 +148,29 @@ div.portlet-message-boards div.lfr-toolbar .lfr-separator {
 
 /* BGN: sign in in header  */
 
-.login-left-top .aui-field-input {
+.login-left-top .field-input {
 	display: inline-block;
 /* 	float:left; */
 	overflow: hidden;
     white-space: nowrap;
 }
 
-.login-left-top .aui-field-element {
+.login-left-top .field-element {
 	display: inline-block;
 }
 
-.login-left-top .aui-field-input-text {
+.login-left-top .field-input-text {
 	display: inline-block;
 /* 	float:left; */
 	overflow: hidden;
     white-space: nowrap;
 }
 
-.login-left-top .aui-field-label {
+.login-left-top .field-label {
 	font-size: 90%;
 }
 
-.login-left-top  .aui-form {
+.login-left-top  .form {
 	display: inline-block;
     white-space: nowrap;
 }
@@ -183,35 +183,14 @@ div.portlet-message-boards div.lfr-toolbar .lfr-separator {
 	display: block;
 }
 
-.login-left-top  .aui-field {
+.login-left-top  .field {
 	display: inline-block;
 /* 	float:left; */
 	overflow: hidden;
     white-space: nowrap;
 }
 
-.login-left-top  .aui-fieldset {
-	display: inline-block;
-/* 	float:left; */
-	margin: 0px 0;
-	overflow: hidden;
-    white-space: nowrap;
-}
-
-
-.login-left-top .aui-field-content:after{
-	margin: 0px 0;
-	overflow: hidden;
-    white-space: nowrap;
-}
-
-.login-left-top .aui-button-holder:after{
-	margin: 0px 0;
-	overflow: hidden;
-    white-space: nowrap;
-}
-
-.login-left-top .aui-field-content {
+.login-left-top  .fieldset {
 	display: inline-block;
 /* 	float:left; */
 	margin: 0px 0;
@@ -219,7 +198,20 @@ div.portlet-message-boards div.lfr-toolbar .lfr-separator {
     white-space: nowrap;
 }
 
-.login-left-top .aui-button-holder {
+
+.login-left-top .field-content:after{
+	margin: 0px 0;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-left-top .button-holder:after{
+	margin: 0px 0;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-left-top .field-content {
 	display: inline-block;
 /* 	float:left; */
 	margin: 0px 0;
@@ -227,7 +219,15 @@ div.portlet-message-boards div.lfr-toolbar .lfr-separator {
     white-space: nowrap;
 }
 
-.login-left-top .aui-button-input{
+.login-left-top .button-holder {
+	display: inline-block;
+/* 	float:left; */
+	margin: 0px 0;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-left-top .button-input{
 	margin: 0 0 5px 0;
 }
 
